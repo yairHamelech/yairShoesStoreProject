@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="icon" href="assets/storeLogo.png" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <link rel="stylesheet" href="styles/bars.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+      <div class="topnav">
+        <a class="menu" href="#"
+          ><img src="assets/homeLogo.png" style="width: 25px; height: 25px"
+        /></a>
+        <div>
+          <a class="menu" href="buyingCart.html " style="position: relative"
+            ><img
+              id="cartLogo"
+              src="assets/buyingCartLogo.png"
+              style="width: 25px; height: 25px" />
+            <p id="demo" class="sum"></p
+          ></a>
+        </div>
+        <a class="menu" href="refound.html">refund</a>
+
+        <div class="top">
+          <a class="menu" href="aboat.html">about</a>
+
+          <a href="LogInShoes.html">
+            <img
+              src="assets/loginLogo.png.png"
+              style="width: 60px; height: 60px; padding: 10px"
+            />
+          </a>
+        </div>
+      </div>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

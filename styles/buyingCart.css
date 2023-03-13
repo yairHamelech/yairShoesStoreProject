@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.shoesImage {
+    vertical-align: middle;
+    width: 100%;
+    background-color: white;
+}
+
+.buttonDiv {
+    display: none;
+}
+
+.addToCart {
+    display: none;
+}
+
+#panel {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: brightness(50%);
+}
+
+.shoes {
+    overflow: visible;
+    margin-left: 4em;
+    margin-top: 3em;
+    display: inline-block;
+    width: 20%;
+}
+
+.details {
+    justify-content: space-between;
+    width: 18em;
+    display: flex;
+}
+
+.scrollbar {
+    height: 34em;
+    overflow-y: scroll;
+}
+
+.shoesName {
+    font-weight: 600;
+}
+
+.backshopping {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 1em;
+    padding: 1em;
+    color: #fff;
+    background: #82ca9c;
+    font-weight: bold;
+    border-radius: 50px;
+    float: right;
+    -webkit-transition: all 0.25s linear;
+    margin-top: -2.2%;
+    display: inline-block;
+}
+
+    .backshopping:hover {
+        background-color: #009579;
+    }
+
+.heading {
+    white-space: nowrap;
+}
+
+.h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2em;
+    display: inline-block;
+    font-weight: 600;
+    color: saddlebrown;
+    background-image: linear-gradient(#d99a5a, #d99a5a);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+    text-decoration: none;
+    margin: 0;
+}
+
+.shopping {
+}
+
+.heading:hover .h1 {
+    /* background-size: 100% 0.1em; */
+}
+
+hr {
+    border-top: 1px solid #82ca9c;
+}
+
+.warning {
+    color: red;
+    letter-spacing: 0.2em;
+    margin-left: 8%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #95a5a6;
+    color: #515751;
+    background-color: white;
+    -webkit-box-shadow: 4px 4px 6px 0px rgba(149, 165, 166, 0.75);
+    -moz-box-shadow: 4px 4px 6px 0px rgba(149, 165, 166, 0.75);
+    box-shadow: 4px 4px 6px 0px rgba(149, 165, 166, 0.75);
+}
+
+h1 {
+    color: #515751;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+i {
+    top: 0px;
+    margin: 20px;
+    opacity: 0.3;
+    color: black;
+    cursor: pointer;
+}
+
+    i:hover {
+        opacity: 1;
+    }
+
+.headForm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-hide {
+    float: right;
+    cursor: pointer;
+}
+
+input,
+select {
+    font-size: 18px;
+    color: #4b6cb7;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+    select.form-control:hover {
+        background: #f8f9f9;
+    }
+
+option select.form-control :hover {
+    background: #f8f9f9;
+}
+
+.form-control:focus {
+    border: 3px solid #2ecc71;
+}
+
+#pay-now {
+    font-size: 20px;
+    color: #f7f7f7;
+    background-color: #2ecc71;
+    width: 100%;
+    border: 3px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s linear;
+}
+
+    #pay-now:hover {
+        color: #f7f7f7;
+        background: #27ae60;
+        outline: none;
+        transition: all 0.3s linear;
+    }
