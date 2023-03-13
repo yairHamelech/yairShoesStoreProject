@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(356deg);
+    }
+}
+
+body {
+    font-family: Arial;
+}
+
+.scrollbar {
+    height: 34em;
+    overflow-y: scroll;
+}
+
+.shoesImage {
+    vertical-align: middle;
+    width: 100%;
+    background-color: white;
+    transform: scale(0.95);
+    filter: brightness(90%);
+    border-radius: 15px;
+}
+
+    .shoesImage:hover {
+    }
+
+.imgDiv {
+    position: relative;
+    width: 100%;
+    transition: all 0.6s ease;
+}
+
+.addToCart {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 78px;
+    top: 200px;
+    height: 50px;
+    width: 140px;
+    -webkit-transform: translate(-50%, -50%);
+    border-radius: 8px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s;
+    background-color: rgb(234, 217, 187);
+    border: solid rgb(234, 217, 187);
+}
+
+    .addToCart:hover {
+        background-color: white;
+    }
+
+.description {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 222px;
+    top: 200px;
+    height: 50px;
+    width: 140px;
+    -webkit-transform: translate(-50%, -50%);
+    border-radius: 5px;
+    transition: all 0.3s;
+    border: solid rgb(234, 217, 187);
+    background-color: rgb(234, 217, 187);
+}
+
+    .description:hover {
+        background-color: white;
+    }
+
+.shoes:hover .addToCart {
+    top: 290px;
+}
+
+.shoes:hover .description {
+    top: 290px;
+}
+
+.container {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_box {
+    text-align: center;
+    border-radius: 40px;
+    background-color: rgb(234, 217, 187);
+    float: left;
+    transition: 0.2s;
+    border: solid rgb(234, 217, 187);
+}
+
+    .search_box:hover {
+        background-color: white;
+    }
+
+input {
+    border: none;
+    margin: 15px 10px 15px 5px;
+    font-size: 20px;
+    outline: none;
+    color: #17202a;
+    background-color: inherit;
+}
+
+.search_box button i {
+    font-size: 20px;
+    margin: 0px 10px;
+    color: rgb(0, 5, 66);
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#error {
+    margin: auto;
+    letter-spacing: 0.2em;
+    margin-top: 30vh;
+    font-weight: 900;
+    font-size: 3em;
+    display: none;
+    text-align: center;
+    color: red;
+}
+
+.shoes {
+    overflow: visible;
+    margin-left: 4em;
+    margin-top: 3em;
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 1px;
+    filter: brightness(95%);
+    transition: 0.2s;
+    border-radius: 15px;
+}
+
+    .shoes:hover .imgDiv {
+        -webkit-transform: translatey(-50px);
+    }
+
+    .shoes:hover {
+    }
+
+.alldetails {
+    transform: scale(0.95);
+}
+
+.details {
+    justify-content: space-between;
+    width: 300px;
+    display: flex;
+}
+
+.shoesName {
+    font-weight: 600;
+}
+
+.filtersDiv {
+    float: right;
+}
+
+.filter {
+    background-color: rgb(234, 217, 187);
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    transition: 0.2s;
+    border: solid rgb(234, 217, 187);
+    cursor: pointer;
+}
+
+    .filter:hover {
+        background-color: #ffffff;
+    }
+
+.logo {
+    display: flex;
+}
+
+.sum {
+    position: absolute;
+    top: 70%;
+    left: 120%;
+    margin: -50px 0 0 -50px;
+}
+
+.tuhb {
+    bottom: 250px;
+    left: 250px;
+    display: inline-block;
+    color: #aaa;
+    transition: 0.2s;
+    position: absolute;
+}
+
+    .tuhb:hover {
+        color: #666;
+    }
+
+    .tuhb:before {
+        font-family: fontawesome;
+        content: "\f004";
+        font-style: normal;
+    }
+
+@keyframes size {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.favotrite {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 42%;
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    border: solid rgb(234, 217, 187);
+    transition: 0.2s;
+    color: #17202a;
+    background-color: rgb(234, 217, 187);
+    font-weight: 500;
+}
+
+    .favotrite:hover {
+        background: white;
+    }
